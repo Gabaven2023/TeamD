@@ -480,7 +480,7 @@ main h2 {
 	margin: 0 0 1rem;		/*h2の外側にとるスペース。上、左右、下への順番。*/
 	padding-left: 1rem;		/*左側に１文字分の余白を作る*/
 	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くとる*/
-	background: #ff4242;	/*背景色*/
+	background: #ff6b42;	/*背景色*/
 	color: #fff;			/*文字色*/
 }
 
@@ -811,7 +811,7 @@ footer .pr {display: block;}
 	.new dt span {
 		display: inline-block;	/*表示させる*/
 		width: 7em;				/*幅。7文字(em)分。*/
-		background: #999;		/*背景色*/
+		background: #ebe709;		/*背景色*/
 		color: #fff;			/*文字色*/
 		font-size: 0.8em;		/*文字サイズを親要素の80%に。*/
 		text-align: center;		/*文字をセンタリング*/
@@ -827,9 +827,13 @@ footer .pr {display: block;}
 		background: #cd0000;	/*背景色*/
 	}
 
-	/*icon-bg2設定。サンプルテンプレートでは「●●●サービス」と書いてあるマーク*/
+	/*icon-bg2設定。サンプルテンプレートでは「●●●お知らせ」と書いてあるマーク*/
 	.new dt span.icon-bg2 {
-		background: #006acd;	/*背景色*/
+		background: #0985eb;	/*背景色*/
+	}
+    /*「ご挨拶」と書いてあるマーク*/
+	.new dt span.icon-bg3{
+		background: #ff7e00
 	}
 
 	/*記事(dd)設定*/
