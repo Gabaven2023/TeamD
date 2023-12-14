@@ -1,7 +1,6 @@
-<style>
-.example{
-    font-size: 200%;
-}
-</style>
-<button class="example">ボタン</button>
-<input type="button" value="ボタン" class="example">
+@charset "utf-8";
+
+button {
+    width: 10em;
+    height:3em;
+  }

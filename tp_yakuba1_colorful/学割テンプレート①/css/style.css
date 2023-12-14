@@ -208,7 +208,7 @@ ul#lang {
 	right: 0px;			/*右からの配置場所*/
 	bottom: 10px;		/*下からの配置場所*/
 	display: flex;		/*flexボックスを使う指定*/
-	font-size: 0.85rem;	/*文字サイズ。85%*/
+	font-size: 2.00rem;	/*文字サイズ。85%*/
 }
 
 /*ボタン１個あたり*/
@@ -220,6 +220,7 @@ ul#lang a {
 	margin: 2px;			/*ボタンの外側にとるスペース。ボタン同士の隙間部分です。*/
 	background: #fff;		/*背景色*/
 }
+
 
 
 /*文字サイズ変更ボタン
