@@ -823,12 +823,12 @@ footer .pr {display: block;}
 		border-radius: 2px;		/*角を丸くする指定*/
 	}
 
-	/*icon-bg1設定。サンプルテンプレートでは「●●●重要」と書いてあるマーク*/
+	/*icon-bg1設定。サンプルテンプレートでは「重要」と書いてあるマーク*/
 	.new dt span.icon-bg1 {
 		background: #cd0000;	/*背景色*/
 	}
 
-	/*icon-bg2設定。サンプルテンプレートでは「●●●お知らせ」と書いてあるマーク*/
+	/*icon-bg2設定。サンプルテンプレートでは「お知らせ」と書いてあるマーク*/
 	.new dt span.icon-bg2 {
 		background: #0985eb;	/*背景色*/
 	}
