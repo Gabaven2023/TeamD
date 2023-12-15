@@ -1257,3 +1257,12 @@ ul.slick-dots li.slick-active button {
 	background: none;
 }
 
+
+ul {
+	overflow: hidden;
+ }
+ li {
+	float: left;
+	padding: 20px 30px;
+	text-align: center;
+ }
