@@ -86,7 +86,7 @@
 
 <div class="button001">
 	<a href="#">全てのクーポン</a>
-	<a href="#">グルメ</a>
+	<a href="javascript:but1();" id="but1">グルメ</a>
 	<a href="#">ファッション</a>
 	<a href="#">スーパーマーケット</a>
 	<a href="#">その他</a>
@@ -105,6 +105,7 @@
               <h3 class="name">佐賀大学</h3>
               <p class="text">佐賀大学の広告</p>
               <p class="day"></p>
+			  <a class="use" href=""></a>
             </div>
           </a>
         </li>
@@ -140,6 +141,10 @@
      var day = dateValue.getDate();
  
      clone_element.querySelector('.day').textContent = "期限"+year+"/"+month+"/"+day;
+
+	 //clone_element.querySelector('.use').textContent = "使う";
+	 //clone_element.querySelector('.use').setAttribute( 'href', json[i].use );
+
      
      
      base_element[0].parentNode.appendChild(clone_element); //元となるHTMLの要素の後ろに複製した要素を追加
@@ -152,6 +157,10 @@
 function removeLi() {
   var first = document.getElementsByClassName('product-item js-based');
   first.remove();
+}
+
+function but1(){
+	api_url = api_url.filter( obj => obj.id!==1)
 }
  </script>
 </section>
