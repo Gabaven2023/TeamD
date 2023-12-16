@@ -92,37 +92,18 @@
 	<a href="#">その他</a>
 </div>
 
-<section class="product">
-	<div class="inner-block">
-	  <ul class="product-list">
-		<li class="product-item">
-		  <a href="#" class="product-link">
-			<div class="img-wrap">
-			  <img src="https://placehold.jp/300x200.png" alt="">
-			</div>
-			<div class="product-data">
-			  <p class="name">会社名</p>
-			  <p class="text">内容</p>
-			  <p class="day">2023/12/31</p>
-			</div>
-		  </a>
-		</li>
-	  </ul>
-    </div>
-</section>	
-
 
 <section class="product">
     <div class="inner-block">
-      <ul class="product-list" id="1">
-        <li class="product-item js-based">
-          <a href="#" class="product-link">
+      <ul class="product-list">
+        <li class="product-item js-based" id="0">
+          <a class="product-link">
             <div class="img-wrap">
-              <img src="" alt="">
+              <img src="https://www.saga-u.ac.jp/images/top_2020/header_logo.png" alt="https://www.saga-u.ac.jp/images/top_2020/header_logo.png" >
             </div>
             <div class="product-data">
-              <p class="name"></p>
-              <p class="text"></p>
+              <h3 class="name">佐賀大学</h3>
+              <p class="text">佐賀大学の広告</p>
               <p class="day"></p>
             </div>
           </a>
@@ -162,11 +143,16 @@
      
      
      base_element[0].parentNode.appendChild(clone_element); //元となるHTMLの要素の後ろに複製した要素を追加
-    }
-	let child = document.getElementById('1');
-    child.parentNode.removeChild("1");
-  });
 
+
+    }
+	
+	
+  });
+function removeLi() {
+  var first = document.getElementsByClassName('product-item js-based');
+  first.remove();
+}
  </script>
 </section>
   
