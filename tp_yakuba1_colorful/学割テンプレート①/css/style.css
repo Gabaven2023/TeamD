@@ -489,7 +489,7 @@ main h2 {
 main h3 {
 	margin: 0 0 1rem;				/*h2の外側にとるスペース。上、左右、下への順番。*/
 	letter-spacing: 0.1em;			/*文字間隔を少しだけ広くとる*/
-	border-bottom: 1px solid #ccc;	/*下線の幅、線種、色*/
+	border-bottom: none;	/*下線の幅、線種、色*/
 }
 
 /*h3の左側のアクセントライン*/
@@ -1238,3 +1238,46 @@ ul.slick-dots li.slick-active button {
 		.pc {display: block;}
 
 	}/*画面幅900px以上の追加指定ここまで*/
+
+.button001 a {
+	border-radius: 3px;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 220px;
+	padding: 10px 25px;
+	color: black;
+	transition: 0.3s ease-in-out;
+	font-weight: 600;
+	background: none;
+	background: none;
+	display: inline-block;
+	
+	
+}
+.button001 a:hover {
+	background: none;
+	background: none;
+}
+
+
+.product-list {
+	overflow: hidden;
+}
+.product-item {
+	float: left;
+	justify-content: space-between;
+	padding: 20px 30px;
+	text-align: center;
+	list-style: none;
+}
+.img-wrap{
+	/*max-width: 300px;
+	max-height: 200%;*/
+	display: block;
+    width: 300px;/*任意の横幅を指定*/
+    height: 300px;/*任意の高さを指定*/
+    object-fit: cover;
+}
