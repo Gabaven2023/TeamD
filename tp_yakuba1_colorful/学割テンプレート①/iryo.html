@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <link rel="stylesheet" href="css/style.css">
+<script src="./food.js"></script>
 </head>
 
 <body class="iryo">
@@ -19,8 +20,8 @@
 <!--ロゴ-->
 <h1 id="logo">
 <a href="index.html">
-<img src="./学割ロゴ案.svg" alt="東京九州市役所" class="pc-logo"><!--大きな端末用ロゴ-->
-<img src="./学割ロゴ案.svg" alt="東京九州市役所" class="sh-logo"><!--小さな端末用ロゴ-->
+<img src="./学割ロゴ案.svg" alt="学wa!ee." class="pc-logo"><!--大きな端末用ロゴ-->
+<img src="./学割ロゴ案.svg" alt="学wa!ee." class="sh-logo"><!--小さな端末用ロゴ-->
 </a>
 </h1>
 
@@ -46,22 +47,30 @@
 </li>
 </ul>
 </nav>
+<br>
 
+<section>
+	<h2>クーポンの種類を選んでください</h2>
+</section>
+<nav>
+<ul>
+	<li><a href="javascript:subete();" id="li-subete">全てのクーポン</a></li>
+	<li><a href="javascript:gurume();">グルメ</a></li>
+	<li><a href="javascript:fashon();">ファッション</a></li>
+	<!--<li><a href="javascript:market();">スーパーマーケット</a></li>
+	<li><a href="javascript:sonota();">その他</a></li>-->
+</ul>
+</nav>
 </div>
 <!--/#menubar-->
 
 <main class="c2">
 
-	<div class="button001">
-		<a href="#">全てのクーポン</a>
-		<a href="food.js:OnLinkClik();">グルメ</a>
-		<a href="#">ファッション</a>
-		<a href="#">スーパーマーケット</a>
-		<a href="#">その他</a>
-	</div>
+
 	
 	
-	<section class="product">
+	
+	<section class="product" id="ku-pon">
 		<div class="inner-block">
 		  <ul class="product-list">
 			<li class="product-item js-based" id="0">
@@ -79,68 +88,12 @@
 			</li>
 		  </ul>
 		</div>
-	 <script>
-			
-	 var api_url = 'https://script.google.com/macros/s/AKfycbx59mwlrQBNtTzd_tmKNf7mdbT9_fVVIfk9IcTUJAwNWM5One8NEHXT4Dx3lxHYzYOi/exec'
-	
-	 fetch(api_url)
-	 .then(function (fetch_data) {
-	   return fetch_data.json();
-	 })
-	 .then(function (json) {
-	   for (var i in json) {
-		 // jsonの要素数だけ回す
-		
-		 var base_element = document.getElementsByClassName('product-item js-based'); //元となるHTMLの要素を指定
-		 var clone_element = base_element[0].cloneNode(true); //元となるHTMLの要素を複製
-		 clone_element.classList.remove('js-based'); //複製した要素からクラス削除
-	 
-		 clone_element.querySelector('img').setAttribute( 'src', json[i].image ); //src属性に取得した画像を設定
-		 clone_element.querySelector('img').setAttribute( 'alt', json[i].name ); //alt属性に取得した商品名を設定
-		 clone_element.querySelector('.name').textContent = json[i].name; //テキストに取得した商品名を設定
-	 
-		 clone_element.querySelector('.text').textContent = json[i].text;
-	 
-		 var jsonDataday = json[i].day;
-	 
-		 var dateValue = new Date(jsonDataday);
-		 var year = dateValue.getFullYear();
-		 var month = dateValue.getMonth() + 1; // 月は0から始まるので+1する
-		 var day = dateValue.getDate();
-	 
-		 clone_element.querySelector('.day').textContent = "期限"+year+"/"+month+"/"+day;
-	
-		 //clone_element.querySelector('.use').textContent = "使う";
-		 //clone_element.querySelector('.use').setAttribute( 'href', json[i].use );
-	
-		 
-		 
-		 base_element[0].parentNode.appendChild(clone_element); //元となるHTMLの要素の後ろに複製した要素を追加
-	
-	
-		}
-		
-		
-	  });
-	function removeLi() {
-	  var first = document.getElementsByClassName('product-item js-based');
-	  first.remove();
-	}
-	
-	
-	 </script>
 	</section>
-
-<!--/.main-->
-
-
-<!--/.sub-->
-
 </main>
 
 </div>
-<!--/#contents-->
 
+<<<<<<< HEAD
 <div id="footer-contents">
 
 
@@ -149,6 +102,10 @@
 
 <div id="footermenu">
 <ul>
+=======
+<!--/#footer-contents-->
+
+>>>>>>> クーポン2
 
 <!--/#footermenu-->
 

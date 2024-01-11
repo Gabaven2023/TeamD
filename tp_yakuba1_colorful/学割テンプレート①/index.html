@@ -115,9 +115,9 @@
    return fetch_data.json();
  })
  .then(function (json) {
-   for (var i in json) {
+   for (var i in json ) {
      // jsonの要素数だけ回す
-    
+    if(i<5){
      var base_element = document.getElementsByClassName('product-item js-based'); //元となるHTMLの要素を指定
      var clone_element = base_element[0].cloneNode(true); //元となるHTMLの要素を複製
      clone_element.classList.remove('js-based'); //複製した要素からクラス削除
@@ -143,6 +143,10 @@
      
      
      base_element[0].parentNode.appendChild(clone_element); //元となるHTMLの要素の後ろに複製した要素を追加
+    }
+    else{
+      break
+    }
 
 
     }
