@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Login Form</title>
+    <style>
+      body{ width: 100vw; height: 100vh; display: flex; flex-direction: row; }
+      #left{ background-color: #ffeeee; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: start; }
+    </style>
+    <script>
+      function OnPost(){
+
+        const URL = "https://script.google.com/macros/s/AKfycbw0BwAF1Kdl78VdV_rig6zKf3fJqE2WvRUEtWQ3U3UnwCDS-HutJP1K9KT-oJogId_5Lw/exec";
+
+        let SendDATA = {
+          "column_1" : document.getElementById("column_1").value,
+          "column_2" : document.getElementById("column_2").value,
+          "column_3" : document.getElementById("column_3").value,
+          "column_4" : document.getElementById("column_4").value
+        };
+        let postparam = {
+          "method" : "POST",
+          "mode" : "no-cors",
+          "Content-Type" : "application/x-www-form-urlencoded",
+          "body" : JSON.stringify(SendDATA)
+        };
+        fetch(URL, postparam);
+      }
+      function OnGet(){
+
+        const URL = "https://script.google.com/macros/s/AKfycbw0BwAF1Kdl78VdV_rig6zKf3fJqE2WvRUEtWQ3U3UnwCDS-HutJP1K9KT-oJogId_5Lw/exec";
+
+        fetch(URL)
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          render_text = data.message;
+          document.getElementById("get_value").innerHTML = render_text;
+        })
+        .catch(error => {
+          document.getElementById("get_value").innerHTML = error;
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="all">
+      <h1>Login Form</h1>
+      <p>名前</p>
+      <input type="text" id="column_1">
+      <p>メールアドレス</p>
+      <input type="text" id="column_2">
+      <p>生年月日(8ケタ)</p>
+      <input type="text" id="column_3">
+      <p>パスワード</p>
+      <input type="text" id="column_4">
+      <button style="margin-top: 20px;" onclick="OnPost();">送信</button>
+</div>
+  </body>
+</html>
