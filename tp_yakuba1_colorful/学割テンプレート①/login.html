@@ -3,7 +3,7 @@
     <div class="form">
       <!--<form action="index.html">-->
         <label for="test">名前：</label>
-        <input type="text" name="test" id="text" required>
+        <input type="text" name="test" id="namae" required>
         <label for="test">パスワード：</label>
         <input type="text" name="test" id="test" required>
           <button class="btn" onclick="onbuttonclick();">Login</button>
@@ -21,7 +21,8 @@
        
           for (var i in json) {
         // jsonの要素数だけ回す
-             if(json[i].名前==text.value){
+        console.log(namae.value)
+             if(json[i].名前==namae.value){
             console.log("ok");
                  if(json[i].パスワード==test.value){
                   console.log("yes");
@@ -33,7 +34,6 @@
                  }
             }
              else{console.log("no") ;
-             document.write("名前かパスワードが違います。");
              } 
           }
       })	}
