@@ -31,6 +31,38 @@
 
 <!--ログインボタン-->
 
+<script>
+function OnButtonClick(){
+	console.log("ok")
+	var base_element = document.getElementsByClassName('product-item js-based'); //元となるHTMLの要素を指定
+	var clone_element = base_element[0].cloneNode(true); //元となるHTMLの要素を複製
+	clone_element.classList.remove('js-based'); //複製した要素からクラス削除
+	 
+	
+	 
+	clone_element.querySelector('.name').textContent = namae.value; //テキストに取得した商品名を設定
+	
+	clone_element.querySelector('.text').textContent = test.value;
+	
+	 
+	base_element[0].parentNode.appendChild(clone_element); //元となるHTMLの要素の後ろに複製した要素を追加
+	
+	
+}
+</script>
+<style>
+	.product{
+		display:flex;
+        flex-flow: column;
+        justify-content:space-between;
+	}
+	.product-list{
+		display:flex;
+        flex-flow: column;
+        justify-content:space-between;
+	}
+
+</style>
 
 </header>
 
@@ -50,30 +82,44 @@
 </div>
 <!--/#menubar-->
 
-<main class="c2">
+<section class="product" id="ku-pon">
+	<div class="all">
+		<p>投稿フォーム</p>
+		<div class="form">
+			<label for="test">ペンネーム：</label>
+			<input type="text" name="test" id="namae" required>
+			<label for="test">内容：</label>
+			<input type="text" name="test" id="test" required>
+			<button class="btn" onclick="OnButtonClick();">投稿</button>
+		  
+		</div>
+	</div>
 
-<div class="main">
-
-	<section>
-
-		
-</div>
+	
+	<div class="inner-block">
+	  <ul class="product-list">
+		<li class="product-item js-based" id="0">
+		  <a class="product-link">
+			<div class="product-data">
+			  <h3 class="name">ペンネーム</h3>
+			  <p class="text">投稿内容</p>
+			</div>
+		  </a>
+		</li>
+	  </ul>
+	</div>
+</section>
 <!--/.sub-->
 
 </main>
 
 </div>
 <!--/#contents-->
-
-<div id="footer-contents">
-
-
-</div>
 <!--/#footer-contents-->
 
 <div id="footermenu">
 <ul>
-<
+
 <!--/#footermenu-->
 
 <footer>
@@ -99,7 +145,11 @@
 <script src="js/fontSizeChanger.js"></script>
 
 <!--このテンプレート専用のスクリプト-->
-<script src="js/main.js"></script>
+<script src="js/main.js">
+
+
+
+</script>
 
 </body>
 </html>
