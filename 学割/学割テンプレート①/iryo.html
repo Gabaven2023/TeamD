@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>学割アプリクーポン</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="iryo">
+
+<div id="container">
+
+<div id="contents">
+
+<header>
+
+<!--ロゴ-->
+<h1 id="logo">
+<a href="index.html">
+<img src="./学割ロゴ案.svg" alt="東京九州市役所" class="pc-logo"><!--大きな端末用ロゴ-->
+<img src="./学割ロゴ案.svg" alt="東京九州市役所" class="sh-logo"><!--小さな端末用ロゴ-->
+</a>
+</h1>
+
+<!--ヘッダー中央コンテンツ-->
+<div id="header-center">
+	
+
+
+<!--文字サイズ変更ボタン-->
+
+
+</header>
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="kurashi.html">🖋掲示板</a></li>
+<li><a href="kosodate.html">🗺マップ</a></li>
+<li><a href="iryo.html">🈹クーポン</a></li>
+
+</li>
+</ul>
+</nav>
+
+</div>
+<!--/#menubar-->
+
+<main class="c2">
+
+	<div class="button001">
+		<a href="#">全てのクーポン</a>
+		<a href="food.js:OnLinkClik();">グルメ</a>
+		<a href="#">ファッション</a>
+		<a href="#">スーパーマーケット</a>
+		<a href="#">その他</a>
+	</div>
+	
+	
+	<section class="product">
+		<div class="inner-block">
+		  <ul class="product-list">
+			<li class="product-item js-based" id="0">
+			  <a class="product-link">
+				<div class="img-wrap">
+				  <img src="https://www.saga-u.ac.jp/images/top_2020/header_logo.png" alt="https://www.saga-u.ac.jp/images/top_2020/header_logo.png" >
+				</div>
+				<div class="product-data">
+				  <h3 class="name">佐賀大学</h3>
+				  <p class="text">佐賀大学の広告</p>
+				  <p class="day"></p>
+				  <a class="use" href=""></a>
+				</div>
+			  </a>
+			</li>
+		  </ul>
+		</div>
+	 <script>
+			
+	 var api_url = 'https://script.google.com/macros/s/AKfycbx59mwlrQBNtTzd_tmKNf7mdbT9_fVVIfk9IcTUJAwNWM5One8NEHXT4Dx3lxHYzYOi/exec'
+	
+	 fetch(api_url)
+	 .then(function (fetch_data) {
+	   return fetch_data.json();
+	 })
+	 .then(function (json) {
+	   for (var i in json) {
+		 // jsonの要素数だけ回す
+		
+		 var base_element = document.getElementsByClassName('product-item js-based'); //元となるHTMLの要素を指定
+		 var clone_element = base_element[0].cloneNode(true); //元となるHTMLの要素を複製
+		 clone_element.classList.remove('js-based'); //複製した要素からクラス削除
+	 
+		 clone_element.querySelector('img').setAttribute( 'src', json[i].image ); //src属性に取得した画像を設定
+		 clone_element.querySelector('img').setAttribute( 'alt', json[i].name ); //alt属性に取得した商品名を設定
+		 clone_element.querySelector('.name').textContent = json[i].name; //テキストに取得した商品名を設定
+	 
+		 clone_element.querySelector('.text').textContent = json[i].text;
+	 
+		 var jsonDataday = json[i].day;
+	 
+		 var dateValue = new Date(jsonDataday);
+		 var year = dateValue.getFullYear();
+		 var month = dateValue.getMonth() + 1; // 月は0から始まるので+1する
+		 var day = dateValue.getDate();
+	 
+		 clone_element.querySelector('.day').textContent = "期限"+year+"/"+month+"/"+day;
+	
+		 //clone_element.querySelector('.use').textContent = "使う";
+		 //clone_element.querySelector('.use').setAttribute( 'href', json[i].use );
+	
+		 
+		 
+		 base_element[0].parentNode.appendChild(clone_element); //元となるHTMLの要素の後ろに複製した要素を追加
+	
+	
+		}
+		
+		
+	  });
+	function removeLi() {
+	  var first = document.getElementsByClassName('product-item js-based');
+	  first.remove();
+	}
+	
+	
+	 </script>
+	</section>
+
+<!--/.main-->
+
+
+<!--/.sub-->
+
+</main>
+
+</div>
+<!--/#contents-->
+
+<div id="footer-contents">
+
+<div class="left">
+
+	<h3>東京九州市役所</h3>
+	<p>〒000-0000 東京九州市中央区XXXXXX1丁目1号<br>
+	代表電話：000-0000-0000<br>
+	開庁時間：月曜日から金曜日の9時00分から17時30分まで</p>
+
+	<table class="week">
+	<caption>〜〜〜の受付窓口</caption>
+	<tr>
+	<th>日</th>
+	<th>月</th>
+	<th>火</th>
+	<th>水</th>
+	<th>木</th>
+	<th>金</th>
+	<th>土</th>
+	</tr>
+	<tr>
+	<td>×</td>
+	<td>○</td>
+	<td>○</td>
+	<td>○</td>
+	<td>○</td>
+	<td>○</td>
+	<td>-</td>
+	</tr>
+	</table>
+
+</div>
+<!--/.left-->
+
+<div class="right">
+
+	<p>市役所までのアクセス<br>
+	<a href="https://template-party.com/file/pickup_googlemap.html">GoogleMapの地図を変更する方法はマニュアルをご覧下さい。</a></p>
+
+	<div class="iframe-box">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+
+</div>
+<!--/.right-->
+
+</div>
+<!--/#footer-contents-->
+
+<div id="footermenu">
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニューサンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+</div>
+<!--/#footermenu-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">東京九州市役所</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+</div>
+<!--/#container-->
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--文字サイズチェンジ用のスクリプト-->
+<script src="js/fontSizeChanger.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+</body>
+</html>
