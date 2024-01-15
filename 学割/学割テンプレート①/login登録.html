@@ -10,7 +10,6 @@
       function OnPost(){
 
         const URL = "https://script.google.com/macros/s/AKfycbw0BwAF1Kdl78VdV_rig6zKf3fJqE2WvRUEtWQ3U3UnwCDS-HutJP1K9KT-oJogId_5Lw/exec";
-
         let SendDATA = {
           "column_1" : document.getElementById("column_1").value,
           "column_2" : document.getElementById("column_2").value,
@@ -28,7 +27,6 @@
       function OnGet(){
 
         const URL = "https://script.google.com/macros/s/AKfycbw0BwAF1Kdl78VdV_rig6zKf3fJqE2WvRUEtWQ3U3UnwCDS-HutJP1K9KT-oJogId_5Lw/exec";
-
         fetch(URL)
         .then(response => {
           return response.json();
