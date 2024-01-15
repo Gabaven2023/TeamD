@@ -1278,6 +1278,7 @@ ul.slick-dots li.slick-active button {
 	max-height: 200%;*/
 	display: block;
     width: 300px;/*任意の横幅を指定*/
-    height: 300px;/*任意の高さを指定*/
+    height: 400px;/*任意の高さを指定*/
     object-fit: cover;
 }
+
