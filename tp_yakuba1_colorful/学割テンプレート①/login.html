@@ -1,12 +1,42 @@
 <div class="all">
     <p>ログインフォーム</p>
     <div class="form">
-      <form action="index.html">
+      <!--<form action="index.html">-->
         <label for="test">名前：</label>
-        <input type="text" name="test" id="test" required>
+        <input type="text" name="test" id="namae" required>
         <label for="test">パスワード：</label>
         <input type="text" name="test" id="test" required>
-          <button class="btn">Login</button>
+          <button class="btn" onclick="onbuttonclick();">Login</button>
       </form>
     </div>
   </div>
+  <script>
+  function onbuttonclick(){
+    const api_url = 'https://script.google.com/macros/s/AKfycbyk8ahXrg9Wg_35BQ_Lt2HCHe5CWHBv_rj6N5DWUpXG163_k_xbLrQQFe5PwtF0xVNN5g/exec'
+      fetch(api_url)
+      .then(function (fetch_data) {
+        return fetch_data.json();
+      })
+      .then(function (json) {	
+       
+          for (var i in json) {
+        // jsonの要素数だけ回す
+        console.log(namae.value)
+             if(json[i].名前==namae.value){
+            console.log("ok");
+                 if(json[i].パスワード==test.value){
+                  console.log("yes");
+                  location.href="index.html";
+                 }
+                 
+                 else{console.log("ダメ");
+                 document.write("名前かパスワードが違います。");
+                 }
+            }
+             else{console.log("no") ;
+             } 
+          }
+      })	}
+      
+    
+    </script>
