@@ -130,6 +130,31 @@ $(function() {
         });
 });
 
+//popup1
+$("button1").on("click", function() {
+	$(".popup1")
+	  .addClass("show1")
+	  .fadeIn();
+	// return false;
+  });
+  $("#close1").on("click", function() {
+	$(".popup1").fadeOut();
+	// return false;
+  });
+
+//popup2
+$("button2").on("click", function() {
+	$(".popup2")
+	  .addClass("show2")
+	  .fadeIn();
+	// return false;
+  });
+  
+  $("#close2").on("click", function() {
+	$(".popup2").fadeOut();
+	// return false;
+  });
+
 
 // 汎用開閉処理
 $(function() {
