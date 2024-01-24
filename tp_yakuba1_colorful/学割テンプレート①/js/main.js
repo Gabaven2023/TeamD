@@ -262,17 +262,3 @@ $(function() {
         });
 });
 
-//お知らせ.html
-
-//popup11
-$("button11").on("click", function() {
-	$(".popup11")
-	  .addClass("show11")
-	  .fadeIn();
-	// return false;
-  });
-  
-  $("#close11").on("click", function() {
-	$(".popup11").fadeOut();
-	// return false;
-  });

@@ -1476,24 +1476,3 @@ ul.slick-dots li.slick-active button {
 
 /*お知らせ.html*/
 
-/*popup11*/
-.popup11 {
-	display: none;
-	height: 100vh;
-	width: 100%;
-	background: black;
-	opacity: 1.0;
-	position: fixed;
-	top: 0;
-	left: 0;
-  }
-  .content11 {
-	background: #fff;
-	padding: 30px;
-	width: 50%;
-  }
-  .show11 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
