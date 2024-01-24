@@ -154,6 +154,91 @@ $("button2").on("click", function() {
 	$(".popup2").fadeOut();
 	// return false;
   });
+//popup3
+$("button3").on("click", function() {
+	$(".popup3")
+	  .addClass("show3")
+	  .fadeIn();
+	// return false;
+  });
+  
+  $("#close3").on("click", function() {
+	$(".popup3").fadeOut();
+	// return false;
+  });
+//popup4
+$("button4").on("click", function() {
+	$(".popup4")
+	  .addClass("show4")
+	  .fadeIn();
+	// return false;
+  });
+  
+  $("#close4").on("click", function() {
+	$(".popup4").fadeOut();
+	// return false;
+  });
+//popup5
+$("button5").on("click", function() {
+	$(".popup5")
+	  .addClass("show5")
+	  .fadeIn();
+	// return false;
+  });
+  
+  $("#close5").on("click", function() {
+	$(".popup5").fadeOut();
+	// return false;
+  });
+//popup6
+$("button6").on("click", function() {
+	$(".popup6")
+	  .addClass("show6")
+	  .fadeIn();
+	// return false;
+  });
+  
+  $("#close6").on("click", function() {
+	$(".popup6").fadeOut();
+	// return false;
+  });
+//popup7
+$("button7").on("click", function() {
+	$(".popup7")
+	  .addClass("show7")
+	  .fadeIn();
+	// return false;
+  });
+  
+  $("#close7").on("click", function() {
+	$(".popup7").fadeOut();
+	// return false;
+  });
+//popup8
+$("button8").on("click", function() {
+	$(".popup8")
+	  .addClass("show8")
+	  .fadeIn();
+	// return false;
+  });
+  
+  $("#close8").on("click", function() {
+	$(".popup8").fadeOut();
+	// return false;
+  });
+//popup9
+$("button9").on("click", function() {
+	$(".popup9")
+	  .addClass("show9")
+	  .fadeIn();
+	// return false;
+  });
+  
+  $("#close9").on("click", function() {
+	$(".popup9").fadeOut();
+	// return false;
+  });
+
 
 
 // 汎用開閉処理
@@ -176,3 +261,18 @@ $(function() {
             }
         });
 });
+
+//お知らせ.html
+
+//popup11
+$("button11").on("click", function() {
+	$(".popup11")
+	  .addClass("show11")
+	  .fadeIn();
+	// return false;
+  });
+  
+  $("#close11").on("click", function() {
+	$(".popup11").fadeOut();
+	// return false;
+  });
