@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>市役所・区役所・自治会向け無料ホームページテンプレート tp_yakuba1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="contents">
+
+<header>
+
+<!--ロゴ-->
+<h1 id="logo">
+<a href="index.html">
+<img src="images/logo.png" alt="東京九州市役所" class="pc-logo"><!--大きな端末用ロゴ-->
+<img src="images/logo_s.png" alt="東京九州市役所" class="sh-logo"><!--小さな端末用ロゴ-->
+</a>
+</h1>
+
+<!--ヘッダー中央コンテンツ-->
+<div id="header-center">
+<p><a href="#"><img src="images/banner_1.jpg" alt=""></a></p>
+<p><a href="#"><img src="images/banner_2.jpg" alt=""></a></p>
+</div>
+
+<!--文字サイズ変更ボタン-->
+<div id="f-size">
+<p>文字サイズ</p>
+<ul>
+<li id="f-small"></li>
+<li id="f-large"></li>
+</ul>
+</div>
+
+<!--言語ボタン-->
+<ul id="lang">
+<li><a href="#">English</a></li>
+<li><a href="#">中文简体</a></li>
+</ul>
+
+</header>
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="kurashi.html">暮らし</a></li>
+<li><a href="kosodate.html">子育て</a></li>
+<li><a href="iryo.html">医療・福祉</a></li>
+<li><a href="event.html">イベント・観光</a></li>
+<li><a href="sangyo.html">産業・ビジネス</a></li>
+<li><a href="">区役所</a>
+	<ul>
+	<li><a href="kuyakusyo.html">中央区</a></li>
+	<li><a href="kuyakusyo.html">東区</a></li>
+	<li><a href="kuyakusyo.html">南区</a></li>
+	<li><a href="kuyakusyo.html">西区</a></li>
+	<li><a href="kuyakusyo.html">北区</a></li>
+	</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+<!--/#menubar-->
+
+<main>
+
+<section>
+
+<h2>当テンプレートの使い方</h2>
+
+<h3>titleタグ、copyright、metaタグ、他の設定</h3>
+<p><strong class="color-check">titleタグの設定はとても重要です。念入りにワードを選んで適切に入力しましょう。</strong><br>
+まず、htmlソースが見れる状態にして、<br>
+<span class="look">&lt;title&gt;市役所・区役所・自治会向け無料ホームページテンプレート tp_yakuba1&lt;/title&gt;</span><br>
+を編集しましょう。<br>
+あなたのホームページ名が「東京九州市役所」だとすれば、<br>
+<span class="look">&lt;title&gt;東京九州市役所&lt;/title&gt;</span><br>
+とすればＯＫです。SEO対策もするなら冒頭に重要なワードを入れておきましょう。</p>
+<p><strong class="color-check">copyrightを変更しましょう。</strong><br>
+続いてhtmlの下の方にある、<br>
+<span class="look">Copyright&copy; 東京九州市役所 All Rights Reserved.</span><br>
+の部分もあなたのサイト名に変更します。</p>
+<p><strong class="color-check">metaタグを変更しましょう。</strong><br>
+htmlソースが見える状態にしてmetaタグを変更しましょう。</p>
+<p>ソースの上の方に、<br>
+<span class="look">content=&quot;ここにサイト説明を入れます&quot;</span><br>
+という部分がありますので、テキストをサイトの説明文に入れ替えます。検索結果の文面に使われる場合もありますので、見た人が来訪したくなるような説明文を簡潔に書きましょう。</p>
+<p><strong class="color-check">h1ロゴのaltタグも変更しましょう。</strong><br>
+html側に、<br>
+<span class="look">alt=&quot;東京九州市役所&quot;</span><br>
+となっている箇所があるので、この部分もあなたのサイト名に変更しましょう。</p>
+
+</section>
+
+<section>
+
+<h2>アイコン画像について（Font Awesomeの解説）</h2>
+<p>imagesフォルダに入っていない画像（アイコン）は全てFont Awesomeの素材です。<br>
+<a href="https://fontawesome.com/" target="_blank">Font Awesome 公式サイト</a><br>
+<a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2" target="_blank">Font Awesome アイコン一覧</a></p>
+<p>iタグを使ってhtmlに直接アイコンを読み込む場合と、cssの擬似要素を使って読み込む場合があります。<br>
+それぞれ他のアイコンに置き換えたい場合は、当サイトの<a href="https://template-party.com/tips/tips20211126_font_awesome.html">マニュアル</a>をお読み下さい。</p>
+<p><strong class="color-check">Font Awesomeを使う為に必要なタグ、ファイル類。</strong><br>
+cssフォルダのstyle.css冒頭で読み込んでいる「Font Awesomeの読み込み」のブロック。</p>
+<p><strong class="color-check">何年も経過した場合、動作に問題が出てくる可能性があります。</strong><br>
+テンプレートを編集していないのに突然動きがおかしくなった場合は、style.cssの冒頭でCDNから読み込んでいるFont Awesome関連のファイルのバージョンを変更して動作するか確認してみて下さい。</p>
+
+</section>
+
+<section>
+
+<h2>当テンプレートには、ロゴが２種類設定されています</h2>
+<p>大きな端末用と、小さな端末用で表示を切り替えています。</p>
+<p><span class="look">&lt;img src=&quot;images/<span class="color-check">logo.png</span>&quot; alt=&quot;東京九州市役所&quot; class=&quot;<span class="color-check">pc-logo</span>&quot;&gt;&lt;!--大きな端末用ロゴ--&gt;</span><br>
+<span class="look">&lt;img src=&quot;images/<span class="color-check">logo_s.png</span>&quot; alt=&quot;東京九州市役所&quot; class=&quot;<span class="color-check">sh-logo</span>&quot;&gt;&lt;!--小さな端末用ロゴ--&gt;</span></p>
+<p>logo.pngやlogo_s.pngが実際に表示させるロゴ画像で、pc-logoやsh-logoは表示を切り替える為のスタイル設定です。<br>
+ロゴ画像については、できるだけimagesフォルダに梱包されているロゴに近い状態で準備して下さい。</p>
+
+</section>
+
+<section>
+
+<h2>トップページのスライドショー（slick）の解説</h2>
+<p>トップページのスライドショーには、slickを使用しています。<br>
+<a href="https://kenwheeler.github.io/slick/" target="_blank">slick 公式サイト</a></p>
+<p>slickのスタイルは、cssフォルダのstyle.cssで設定しています。それ以外に、jsフォルダのslick.jsにも設定があります。スライドの速度はこのslick.js内の「autoplaySpeed」で調整できます。<br>
+他、slickには様々なオプションもあるので気になる人、カスタマイズしたい場合は「slick オプション」などでGoogle検索してみて下さい。</p>
+<p><strong class="color-check">画像の追加方法</strong><br>
+html側に既存のタグをコピペするだけでOKです。<br>
+例えば「4.jpg」という画像をスライドショーに１枚追加したい場合、現状では、<br>
+<span class="look">&lt;aside class=&quot;mainimg&quot;&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/2.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/3.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+&lt;/aside&gt;</span><br>
+ですが、これに１行加えるだけです。<br>
+<span class="look">&lt;aside class=&quot;mainimg&quot;&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/2.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+&lt;div&gt;&lt;img src=&quot;images/3.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;<br>
+<span class="color-check">&lt;div&gt;&lt;img src=&quot;images/4.jpg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;</span><br>
+&lt;/aside&gt;</span></p>
+<p><strong class="color-check">画像ごとにリンクも設定できます</strong><br>
+通常の画像へのリンク設定と同じやり方でOKです。<br>
+<span class="look">&lt;div&gt;<span class="color-check">&lt;a href=&quot;index.html&quot;</span>&gt;&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;&gt;<span class="color-check">&lt;/a&gt;</span>&lt;/div&gt;</span></p>
+<p><strong class="color-check">slickを使う為に必要なタグ、ファイル類。</strong><br>
+1. html下部にある、「jQueryの読み込み」のタグ。※slick.jsより上の行で読み込んで下さい。<br>
+2. その下にある、「スライドショー（slick）」のタグ。<br>
+3. jsフォルダ内のslick.jsファイル。</p>
+<p><strong class="color-check">何年も経過した場合、動作に問題が出てくる可能性があります。</strong><br>
+テンプレートを編集していないのに突然動きがおかしくなった場合は、CDNから読み込んでいるjQueryのバージョン及びslick関連のファイルのバージョンを変更して動作するか確認してみて下さい。</p>
+<p><strong class="color-check">スライドショーでなく、固定画像にしたい場合。</strong><br>
+1. htmlのスライドショー画像のうち、残したい画像以外を削除。<br>
+2. html下部にある、「スライドショー（slick）」のブロックを削除。<br>
+3. jsフォルダのslick.jsファイルも合わせて削除しておきます。<br>
+4. 上記の作業までで固定画像になりますが、関連スタイルを削除しておきたいなら、cssフォルダのstyle.cssの、<br>
+<span class="look">/*スライドショー（slickを使用）</span><br>
+からのブロックを全部削除して下さい。</p>
+
+</section>
+
+<section>
+
+<h2>上部メニューについて</h2>
+<p>画面幅が900px未満で、メインメニューが開閉ブロックタイプになります。<br>
+この数値を変更したい場合は、jsフォルダのmain.jsの、<br>
+<span class="look">if(window.innerWidth &lt; <span class="color-check">900</span>)</span><br>
+の、<span class="color-check">900</span>の数値を変更して下さい。</p>
+<p>また、文字サイズ「大」を選択すると、２段になります。</p>
+
+<h3>ドロップダウンメニューについて</h3>
+<p>「区役所」のメニューはドロップダウンメニューになっています。<br>
+ドロップダウンを使う為の特別な設定は不要ですが、必ず親となるli要素の「中」に入れるようにして下さい。</p> 
+<p>※OKな例：<br>
+<span class="look">
+<span class="color-check">&lt;li&gt;&lt;a href=&quot;&quot;&gt;親となるメニュー&lt;/a&gt;</span><br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+<span class="color-check">&lt;/li&gt;</span>
+</span>
+</p>
+<p>※NGな例<br>
+<span class="look">
+<span class="color-check">&lt;li&gt;&lt;a href=&quot;&quot;&gt;親となるメニュー&lt;/a&gt;&lt;/li&gt;</span><br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;
+</span>
+</p>
+<p>親の&lt;a&gt;のリンク先は上記のように空っぽ（&quot;&quot;）にしておいて下さい。</p>
+<p>ドロップダウンの親メニューについているアイコンもFont Awesomeです。<br>
+cssフォルダのstyle.cssの「a.ddmenu::before」で読み込んでいます。</p>
+
+</section>
+
+<section>
+
+<h2>トップページの「お知らせ」ブロックのアイコンについて</h2>
+<p>アイコン内のテキストはhtml側で直接入力されていますので必要に応じて編集して下さい。</p>
+<p>背景色は、cssフォルダのstyle.cssの、<br>
+<span class="look">.new dt span</span><br>
+や、<br>
+<span class="look">.new dt span.icon-bg1</span><br>
+や、<br>
+<span class="look">.new dt span.icon-bg2</span><br>
+のbackgroundでそれぞれ変更できます。</p>
+<p>新しいアイコンを追加したい場合、上記の「.new dt span.icon-bg2」ブロックをコピペし、<span class="color-check">.icon-bg2</span>部分を<span class="color-check">.icon-bg3</span>などに変更し、backgroundに好きな色を設定します。<br>
+後はhtml側で、<br>
+<span class="look">&lt;span class=&quot;<span class="color-check">icon-bg3</span>&quot;&gt;〜〜〜&lt;/span&gt;</span><br>
+などとすればOKです。</p>
+<p>尚、あまり文字数が増えるとレイアウトが崩れるので注意して下さい。</p>
+
+</section>
+
+<setion>
+
+<h2>文字サイズ「小」「大」について</h2>
+<p><strong class="color-check">「小」「大」の文字サイズを変更したい場合</strong><br>
+cssフォルダのstyle.cssの冒頭にある、<br>
+<span class="look">/*文字サイズの設定</span><br>
+の所でそれぞれ指定しています。お好みで変更して頂いて構いません。</p>
+<p><strong class="color-check">「大」をデフォルトにしたい場合</strong><br>
+jsフォルダのfontSizeChanger.jsを開き、中のコメントを読んで変更して下さい。</p>
+<p><strong class="color-check">ページ単位でリセットされます</strong><br>
+サイト全体に対して適用したい場合、<a href="https://template-party.com/tips/tips20230803_fontsizechanger.html#change2">こちらのマニュアルをご覧下さい。</a></p>
+
+</setion>
+
+<section>
+
+<h2>各ページの色の切り替えについて（※colorfulタイプのみ）</h2>
+<p>colorfulタイプのみ、ページ単位でテーマカラーが変わります。</p>
+<p>使い方としては、まずhtmlのbody要素にそれぞれのclassをつけます。<br>
+「暮らし」ページであれば、<br>
+<span class="look">&lt;body <span class="color-check">class=&quot;kurashi&quot;</span>&gt;</span><br>
+です。</p>
+<p>それぞれ対応するスタイルは、cssフォルダのstyle.cssで、<br>
+<span class="look">/*色分け</span><br>
+をテキスト検索して下さい。詳しいコメント説明があります。</p>
+<p>それぞれ、「メニューの背景色」「メインコンテンツのh2の背景色」「サブコンテンツがある場合のh3の背景色」「サイトの最上部にあるアクセントライン」を指定しています。</p>
+<p>「#menubar li:nth-of-type(1) a」などの部分がメニューの指定ですが、ここの(<span class="color-check">1</span>)の数字部分がメニューの何個目かの指示になります。<br>
+(<span class="color-check">3</span>)と記載があれば３個目のメニューである「医療・福祉」となります。</p>
+
+</section>
+
+<section>
+
+<h2>テーブル</h2>
+<p>テーブルのサンプルです。必要があればコピペして使って下さい。</p>
+
+<table class="ta1">
+<caption>必要があれば大見出しを使って下さい</caption>
+<tr>
+<th>見出し</th>
+<td>ここに本文を入れます。サンプルテキスト。</td>
+</tr>
+<tr>
+<th>見出し</th>
+<td>ここに本文を入れます。サンプルテキスト。</td>
+</tr>
+<tr>
+<th>見出し</th>
+<td>ここに本文を入れます。サンプルテキスト。</td>
+</tr>
+<tr>
+<th>見出し</th>
+<td>ここに本文を入れます。サンプルテキスト。</td>
+</tr>
+<tr>
+<th>見出し</th>
+<td>ここに本文を入れます。サンプルテキスト。</td>
+</tr>
+<tr>
+<th>見出し</th>
+<td>ここに本文を入れます。サンプルテキスト。</td>
+</tr>
+</table>
+
+</section>
+
+<section>
+
+<h2>汎用開閉ブロックのサンプル</h2>
+<p>以下は「よく頂く質問」を仮定してサンプルを用意していますが汎用的な開閉ブロックなので、基本的にはどこにでも使えます。<br>
+クリック対象としたいブロックに<span class="look"><span class="color-check">class=&quot;openclose&quot;</span></span>とつければ、続く要素が自動的に開閉ブロックになります。<br>
+もしすでにclass指定がある場合は、半角スペースで区切って追加すればOKです。<br>
+<span class="look">例：class=&quot;sample <span class="color-check">openclose</span>&quot;</span></p>
+
+<dl class="faq">
+
+<dt class="openclose">ここに質問を書きます。クリックで回答が開きます。</dt>
+<dd>ここに回答を書きます。サンプルテキスト。ここに回答を書きます。サンプルテキスト。ここに回答を書きます。サンプルテキスト。</dd>
+
+<dt class="openclose">ここに質問を書きます。クリックで回答が開きます。ここに質問を書きます。クリックで回答が開きます。ここに質問を書きます。クリックで回答が開きます。ここに質問を書きます。クリックで回答が開きます。</dt>
+<dd>ここに回答を書きます。サンプルテキスト。ここに回答を書きます。サンプルテキスト。ここに回答を書きます。サンプルテキスト。ここに回答を書きます。サンプルテキスト。ここに回答を書きます。サンプルテキスト。ここに回答を書きます。サンプルテキスト。ここに回答を書きます。サンプルテキスト。<br>
+ここに回答を書きます。サンプルテキスト。ここに回答を書きます。サンプルテキスト。ここに回答を書きます。サンプルテキスト。</dd>
+
+</dl>
+
+</section>
+
+</main>
+
+<main class="c2">
+
+<div class="main">
+
+	<section>
+
+	<h2>2カラムで使う場合</h2>
+	
+	<p>トップページでも部分的に使っていますが、他のページで2カラムにしたい場合、<br>
+	&lt;main&gt;を、&lt;main <span class="color-check">class=&quot;c2&quot;</span>&gt;<br>
+	に変更。</p>
+	<p>その中に、左右のブロック（<span class="color-check">mainとsub</span>）を追加します。<br>
+	mainが２つありますが、それぞれ異なる要素になるので間違えないようにして下さい。</p>
+	<p>全体としては、以下のような形になります。</p>
+
+	<p><span class="look">&lt;main <span class="color-check">class=&quot;c2</span>&quot;&gt;<br><br>
+	&lt;div <span class="color-check">class=&quot;main</span>&quot;&gt;<br>
+	※ここにメインコンテンツの内容を入れます。<br>
+	&lt;/div&gt;<br><br>
+	&lt;div <span class="color-check">class=&quot;sub</span>&quot;&gt;<br>
+	※ここにサブコンテンツの内容を入れます。<br>
+	&lt;/div&gt;<br><br>
+	&lt;/main&gt;</span></p>
+
+	</section>
+
+</div>
+<!--/.main-->
+
+<div class="sub">
+
+	<div class="box1">
+
+	<h3>見出し</h3>
+
+	<nav>
+	<ul class="submenu">
+	<li><a href="">サブメニュー</a></li>
+	<li><a href="">サブメニュー</a></li>
+	<li><a href="">サブメニュー</a></li>
+	<li><a href="">サブメニュー</a></li>
+	<li><a href="">サブメニュー</a></li>
+	</ul>
+	</nav>
+
+	</div>
+	<!--/.box1-->
+
+</div>
+<!--/.sub-->
+
+</main>
+
+</div>
+<!--/#contents-->
+
+<div id="footer-contents">
+
+<div class="left">
+
+	<h3>東京九州市役所</h3>
+	<p>〒000-0000 東京九州市中央区XXXXXX1丁目1号<br>
+	代表電話：000-0000-0000<br>
+	開庁時間：月曜日から金曜日の9時00分から17時30分まで</p>
+
+	<table class="week">
+	<caption>〜〜〜の受付窓口</caption>
+	<tr>
+	<th>日</th>
+	<th>月</th>
+	<th>火</th>
+	<th>水</th>
+	<th>木</th>
+	<th>金</th>
+	<th>土</th>
+	</tr>
+	<tr>
+	<td>×</td>
+	<td>○</td>
+	<td>○</td>
+	<td>○</td>
+	<td>○</td>
+	<td>○</td>
+	<td>-</td>
+	</tr>
+	</table>
+
+</div>
+<!--/.left-->
+
+<div class="right">
+
+	<p>市役所までのアクセス<br>
+	<a href="https://template-party.com/file/pickup_googlemap.html">GoogleMapの地図を変更する方法はマニュアルをご覧下さい。</a></p>
+
+	<div class="iframe-box">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+
+</div>
+<!--/.right-->
+
+</div>
+<!--/#footer-contents-->
+
+<div id="footermenu">
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニューサンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+</div>
+<!--/#footermenu-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">東京九州市役所</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+</div>
+<!--/#container-->
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--文字サイズチェンジ用のスクリプト-->
+<script src="js/fontSizeChanger.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+</body>
+</html>

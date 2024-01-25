@@ -844,6 +844,198 @@ footer .pr {display: block;}
 
 	}/*画面幅900px以上の追加指定ここまで*/
 
+    /*popup1*/
+	.popup1 {
+		display: none;
+		height: 100vh;
+		width: 100%;
+		background: black;
+		opacity: 1.0;
+		position: fixed;
+		top: 0;
+		left: 0;
+	  }
+	  .content1 {
+		background: #fff;
+		padding: 30px;
+		width: 50%;
+	  }
+	  .show1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	/*popup2*/
+	.popup2 {
+		display: none;
+		height: 100vh;
+		width: 100%;
+		background: rgb(0, 0, 0);
+		opacity: 1.0;
+		position: fixed;
+		top: 0;
+		left: 0;
+	  }
+	  .content2 {
+		background: #fff;
+		padding: 30px;
+		width: 80%;
+	  }
+	  .show2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	/*popup3*/
+	.popup3 {
+		display: none;
+		height: 100vh;
+		width: 100%;
+		background: black;
+		opacity: 1.0;
+		position: fixed;
+		top: 0;
+		left: 0;
+	  }
+	  .content3 {
+		background: #fff;
+		padding: 30px;
+		width: 50%;
+	  }
+	  .show3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	/*popup4*/
+	.popup4 {
+		display: none;
+		height: 100vh;
+		width: 100%;
+		background: black;
+		opacity: 1.0;
+		position: fixed;
+		top: 0;
+		left: 0;
+	  }
+	  .content4 {
+		background: #fff;
+		padding: 30px;
+		width: 50%;
+	  }
+	  .show4 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	/*popup5*/
+	.popup5 {
+		display: none;
+		height: 100vh;
+		width: 100%;
+		background: black;
+		opacity: 1.0;
+		position: fixed;
+		top: 0;
+		left: 0;
+	  }
+	  .content5 {
+		background: #fff;
+		padding: 30px;
+		width: 80%;
+	  }
+	  .show5 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	/*popup6*/
+	.popup6 {
+		display: none;
+		height: 100vh;
+		width: 100%;
+		background: black;
+		opacity: 1.0;
+		position: fixed;
+		top: 0;
+		left: 0;
+	  }
+	  .content6 {
+		background: #fff;
+		padding: 30px;
+		width: 50%;
+	  }
+	  .show6 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	/*popup7*/
+	.popup7 {
+		display: none;
+		height: 100vh;
+		width: 100%;
+		background: black;
+		opacity: 1.0;
+		position: fixed;
+		top: 0;
+		left: 0;
+	  }
+	  .content7 {
+		background: #fff;
+		padding: 30px;
+		width: 50%;
+	  }
+	  .show7 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	/*popup8*/
+	.popup8 {
+		display: none;
+		height: 100vh;
+		width: 100%;
+		background: black;
+		opacity: 1.0;
+		position: fixed;
+		top: 0;
+		left: 0;
+	  }
+	  .content8 {
+		background: #fff;
+		padding: 30px;
+		width: 50%;
+	  }
+	  .show8 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	/*popup9*/
+	.popup9 {
+		display: none;
+		height: 100vh;
+		width: 100%;
+		background: black;
+		opacity: 1.0;
+		position: fixed;
+		top: 0;
+		left: 0;
+	  }
+	  .content9 {
+		background: #fff;
+		padding: 30px;
+		width: 50%;
+	  }
+	  .show9 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+
+	  
+
 
 /*.listブロック共通
 ---------------------------------------------------------------------------*/
@@ -1278,7 +1470,9 @@ ul.slick-dots li.slick-active button {
 	max-height: 200%;*/
 	display: block;
     width: 300px;/*任意の横幅を指定*/
-    height: 300px;/*任意の高さを指定*/
+    height: 400px;/*任意の高さを指定*/
     object-fit: cover;
 }
+
+/*お知らせ.html*/
 

@@ -2,9 +2,9 @@ const api_url = 'https://script.google.com/macros/s/AKfycbx59mwlrQBNtTzd_tmKNf7m
 console.log(Object.keys(api_url).length);
 
 
-function subete(){
+
 	
-    fetch(api_url)
+    /*fetch(api_url)
 	.then(function (fetch_data) {
 	  return fetch_data.json();
 	})
@@ -14,7 +14,7 @@ function subete(){
 	    var element = document.getElementById([i]); 
         element.remove();
 	
-	}})
+	}})*/
 
 	 fetch(api_url)
 	 .then(function (fetch_data) {
@@ -51,23 +51,10 @@ function subete(){
 		
 	});
 	
-}	
 
-function gurume(){
-fetch(api_url)
-	.then(function (fetch_data) {
-	  return fetch_data.json();
-	})
-	.then(function (json) {
-        var json_obj_length = Object.keys(api_url).length;
-		console.log(json_obj_length)
-	    for (var i = 1;i<json_obj_length;i++) {
-	    var element = document.getElementById([i]); 
-        element.remove();
-		console.log(i)
-	
-	}})
 
+/*function gurume(){
+const api_url = 'https://script.google.com/macros/s/AKfycbx59mwlrQBNtTzd_tmKNf7mdbT9_fVVIfk9IcTUJAwNWM5One8NEHXT4Dx3lxHYzYOi/exec'
 	fetch(api_url)
 	.then(function (fetch_data) {
 	  return fetch_data.json();
@@ -274,4 +261,4 @@ fetch(api_url)
     	}
 	})	
 	
-}	
+}	*/
